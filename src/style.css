@@ -18,6 +18,7 @@ li {
   color: rgb(135, 135, 135);
   font-size: 16px;
   line-height: 19px;
+  text-transform: capitalize;
 }
 
 .weather-app-wrapper {

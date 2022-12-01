@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <!-- Bootstrap -->
     <link
       rel="stylesheet"
@@ -19,10 +21,10 @@
       <div class="weather-app-wrapper">
         <div class="weather-app">
           <div class="overview">
-            <h1>New York</h1>
+            <h1 id="city"></h1>
             <ul>
-              <li>Friday 05:00</li>
-              <li>Clear</li>
+              <li>Last updated: <span id="date"></span></li>
+              <li id="description"></li>
             </ul>
           </div>
           <div class="row">
@@ -33,7 +35,7 @@
                   alt="cloudy emoji"
                 />
                 <div>
-                  <strong id="temperature">12</strong
+                  <strong id="temperature"></strong
                   ><span class="units">
                     °C |<a href="#" id="fareinheit">°F</a></span
                   >
@@ -42,9 +44,8 @@
             </div>
             <div class="col-sm-6">
               <ul>
-                <li>Precipitation: 0%</li>
-                <li>Humidity: 73%</li>
-                <li>Wind: 2km/h</li>
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li><span id="wind">Wind: </span>2km/h</li>
               </ul>
             </div>
           </div>
