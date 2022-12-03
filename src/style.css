@@ -58,10 +58,15 @@ li:first-letter {
   top: -34px;
 }
 
-#fareinheit {
+.weather-temperature .link {
   text-decoration: none;
+}
+
+.weather-temperature .active {
+  color: rgb(33, 33, 33);
 }
 
 #signature {
   text-decoration: none;
+  cursor: default;
 }
