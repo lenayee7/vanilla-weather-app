@@ -81,10 +81,15 @@ li:first-letter {
   opacity: 0.5;
 }
 
-.weather-forecast-temperature-max {
-}
-
 #signature {
   text-decoration: none;
   cursor: default;
+}
+
+.weather-temperature .active:hover {
+  text-decoration: none;
+}
+
+.weather-forecast-temperatures {
+  font-size: 13px;
 }
